@@ -1,0 +1,177 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box {
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box h1 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+
+.result {
+  display: block;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+
+  background-color: #fff;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.next,
+.prev {
+  background-color: #2196f3;
+  border: none;
+  padding: 15px 45px;
+  color: #fff;
+  font-size: 22px;
+  border: 1px solid #2196f3;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.result {
+  color: #2196f3;
+  font-size: 22px;
+  background-color: #fff;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.prev {
+  background-color: #fff;
+  color: #2196f3;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding: 15px;
+  padding-left: 55px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 22px;
+  background-color: rgba(235, 235, 235, 0.566);
+  border: 1px solid rgba(235, 235, 235, 0.566);
+  border-radius: 50px;
+}
+
+.container:hover {
+  background-color: #2195f39c;
+  color: #fff;
+}
+
+.color {
+  background-color: #2196f3;
+  color: #fff;
+}
+
+/* progress bar */
+
+#progress {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+#progress-bar {
+  position: absolute;
+  background: lightseagreen;
+  height: 5px;
+  width: 0%;
+  top: 50%;
+  left: 0;
+}
+
+#progress-num {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+#progress-num::before {
+  content: "";
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+
+#progress-num .step {
+  padding: 2px;
+  border: 3px solid lightgray;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+#progress-num .step.active {
+  border-color: #2196f3;
+  background-color: #2196f3;
+  color: #fff;
+}
+
+.disabled {
+  pointer-events: none;
+}

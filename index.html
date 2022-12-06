@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 400px)"
+      href="css/mobile.css"
+    />
+    <title>Quiz game</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="modal hidden">
+        <button class="close-modal">X</button>
+        <h4>Quiz results</h4>
+        <p class="score">Lorem ipsum dolor</p>
+      </div>
+      <div class="overlay hidden"></div>
+      <div id="progress">
+        <div id="progress-bar"></div>
+        <ul id="progress-num">
+          <li class="step active">1</li>
+          <li class="step">2</li>
+          <li class="step">3</li>
+          <li class="step">4</li>
+        </ul>
+      </div>
+      <h1 class="question">Custom Checkboxes</h1>
+      <div class="answers">
+        <!-- <label class="container"><span class="answer">1</span></label>
+        <label class="container"><span class="answer">2</span></label>
+        <label class="container"><span class="answer">3</span></label>
+        <label class="container"><span class="answer">4</span></label> -->
+      </div>
+      <!-- <label class="container"><span class="answer">5</span></label>
+      <label class="container"><span class="answer">6</span></label>
+      <label class="container"><span class="answer">7</span></label>
+      <label class="container"><span class="answer">8</span></label> -->
+      <div class="button">
+        <button class="btn prev hidden" data-data-id="prev">prev</button>
+        <button class="btn next" data-data-id="next">next</button>
+        <button class="btn result hidden" data-data-id="result">
+          show result
+        </button>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
